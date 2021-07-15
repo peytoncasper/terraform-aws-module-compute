@@ -9,7 +9,7 @@ resource "aws_network_interface" "subnet" {
 
 resource "aws_instance" "web" {
   ami           = "ami-03368e982f317ae48"
-  instance_type = var.instance_type
+  instance_type = "t3.medium"
 
   vpc_security_group_ids = var.security_group_ids
 
