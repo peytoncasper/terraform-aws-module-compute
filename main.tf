@@ -17,7 +17,4 @@ resource "aws_instance" "web" {
     network_interface_id = aws_network_interface.subnet.id
     device_index         = 0
   }
-
-
-  associate_public_ip_address = false
 }
